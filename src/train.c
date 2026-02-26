@@ -71,7 +71,7 @@ inputTrains (TRAIN trains[], int maxCount)
                 printf ("Number of wagons: ");
                 scanf ("%d", &trains[i].wagons);
 
-                printf ("Wagon type (kupejnyj/platskart/obshchij): ");
+                printf ("Wagon type (compartment/reserved seat/general): ");
                 scanf ("%s", trains[i].wagon_type);
 
                 printf ("Passengers per wagon: ");
@@ -129,7 +129,7 @@ printCompartmentPassengers (TRAIN trains[], int count)
 
         for (i = 0; i < count; i++)
         {
-                if (strcmp (trains[i].wagon_type, "kupejnyj") == 0)
+                if (strcmp (trains[i].wagon_type, "compartment") == 0)
                         total += trains[i].wagons
                                  * trains[i].passengers;
         }
