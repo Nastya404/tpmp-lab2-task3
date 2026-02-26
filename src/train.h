@@ -1,0 +1,47 @@
+/* train.h */
+/* Author: Yarmolik Anastasia, group 11 */
+
+#ifndef TRAIN_H
+#define TRAIN_H
+
+/*
+ * Maximum number of train records
+ */
+#define MAX_TRAINS 12
+
+/*
+ * Structure TRAIN - stores information about a train
+ */
+typedef struct
+{
+        int     number;         /* train number */
+        char    direction[50];  /* destination */
+        int     departure_h;    /* departure time: hours */
+        int     departure_m;    /* departure time: minutes */
+        int     arrival_h;      /* arrival time: hours */
+        int     arrival_m;      /* arrival time: minutes */
+        int     distance;       /* distance in km */
+        int     wagons;         /* number of wagons */
+        char    wagon_type[20]; /* type of wagon */
+        int     passengers;     /* passengers per wagon */
+} TRAIN;
+
+/* Create array of trains, returns count */
+int     inputTrains (TRAIN trains[], int maxCount);
+
+/* Print trains traveling more than 24 hours */
+void    printOver24h (TRAIN trains[], int count);
+
+/* Print total passengers for compartment wagons */
+void    print_compartment_passengers (TRAIN trains[], int count);
+
+/* Print trains going to Grodno */
+void    printToGrodno (TRAIN trains[], int count);
+
+/* Print train with maximum wagons */
+void    printMaxWagons (TRAIN trains[], int count);
+
+/* Print single train record */
+void    printTrain (TRAIN *t);
+
+#endif
