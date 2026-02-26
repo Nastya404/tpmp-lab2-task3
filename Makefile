@@ -2,7 +2,7 @@
 # Author: Yarmolik Anastasia, group 11
 
 CC = gcc
-CFLAGS = -Wall 
+CFLAGS = -Wall -Isrc
 
 SRC_DIR = src
 OBJ_DIR = obj
