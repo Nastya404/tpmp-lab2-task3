@@ -1,0 +1,50 @@
+=== Test 1: Normal ===
+Enter number of trains (max 12): 
+--- Train 1 of 3 ---
+Number: Direction: Departure (HH MM): Arrival (HH MM): Distance (km): Wagons: Type (kupejnyj/platskart/obshchij): Passengers per wagon: 
+--- Train 2 of 3 ---
+Number: Direction: Departure (HH MM): Arrival (HH MM): Distance (km): Wagons: Type (kupejnyj/platskart/obshchij): Passengers per wagon: 
+--- Train 3 of 3 ---
+Number: Direction: Departure (HH MM): Arrival (HH MM): Distance (km): Wagons: Type (kupejnyj/platskart/obshchij): Passengers per wagon: 
+=== Trains traveling more than 24 hours ===
+  #205  Moskva  dep 22:00  arr 06:30  2000 km  15 wagons  platskart  54 pass
+    estimated travel time: 33.3 h
+
+=== Total passengers in compartment wagons ===
+  Train #101: 12 wagons x 36 = 432
+  Train #310: 8 wagons x 36 = 288
+  Total: 720 passengers
+
+=== Trains to Grodno ===
+  #101  Grodno  dep 08:30  arr 20:15  300 km  12 wagons  kupejnyj  36 pass
+  #310  Grodno  dep 14:00  arr 22:00  500 km  8 wagons  kupejnyj  36 pass
+
+=== Train with maximum wagons ===
+  #205  Moskva  dep 22:00  arr 06:30  2000 km  15 wagons  platskart  54 pass
+
+=== Test 2: Negative count ===
+Error: expected positive integer
+No valid train data entered.
+Enter number of trains (max 12): 
+=== Test 3: Zero count ===
+Error: expected positive integer
+No valid train data entered.
+Enter number of trains (max 12): 
+=== Test 4: Bad time ===
+Error: time must be 00:00..23:59
+No valid train data entered.
+Enter number of trains (max 12): 
+--- Train 1 of 1 ---
+Number: Direction: Departure (HH MM): 
+=== Test 5: Bad wagon type ===
+Error: type must be kupejnyj, platskart or obshchij
+No valid train data entered.
+Enter number of trains (max 12): 
+--- Train 1 of 1 ---
+Number: Direction: Departure (HH MM): Arrival (HH MM): Distance (km): Wagons: Type (kupejnyj/platskart/obshchij): 
+=== Test 6: Negative distance ===
+Error: distance must be positive
+No valid train data entered.
+Enter number of trains (max 12): 
+--- Train 1 of 1 ---
+Number: Direction: Departure (HH MM): Arrival (HH MM): Distance (km): 

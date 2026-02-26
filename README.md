@@ -6,11 +6,11 @@ Console application implementing TRAIN structure for managing train data.
 Variant 22, Lab 2, Task 3
 
 
-##Author
+## Author
 
 Yarmolik Anastasiya, group 11
 
-##Usage
+## Usage
 
 To build and run the project:
 ```
