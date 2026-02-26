@@ -1,0 +1,25 @@
+3
+101
+Grodno
+8 30
+20 15
+300
+12
+kupejnyj
+36
+205
+Moskva
+22 00
+6 30
+2000
+15
+platskart
+54
+310
+Grodno
+14 00
+22 00
+500
+8
+kupejnyj
+36
