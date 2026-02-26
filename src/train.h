@@ -33,7 +33,7 @@ int     inputTrains (TRAIN trains[], int maxCount);
 void    printOver24h (TRAIN trains[], int count);
 
 /* Print total passengers for compartment wagons */
-void    print_compartment_passengers (TRAIN trains[], int count);
+void    printCompartmentPassengers (TRAIN trains[], int count);
 
 /* Print trains going to Grodno */
 void    printToGrodno (TRAIN trains[], int count);
