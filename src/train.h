@@ -8,6 +8,8 @@
  * Maximum number of train records
  */
 #define MAX_TRAINS 12
+#define MAX_STR 50
+#define MAX_TYPE 20
 
 /*
  * Structure TRAIN - stores information about a train
@@ -15,14 +17,14 @@
 typedef struct
 {
         int     number;         /* train number */
-        char    direction[50];  /* destination */
-        int     departure_h;    /* departure time: hours */
-        int     departure_m;    /* departure time: minutes */
-        int     arrival_h;      /* arrival time: hours */
-        int     arrival_m;      /* arrival time: minutes */
+        char    direction[MAX_STR];  /* destination */
+        int     departureH;    /* departure time: hours */
+        int     departureM;    /* departure time: minutes */
+        int     arrivalH;      /* arrival time: hours */
+        int     arrivalM;      /* arrival time: minutes */
         int     distance;       /* distance in km */
         int     wagons;         /* number of wagons */
-        char    wagon_type[20]; /* type of wagon */
+        char    wagonType[MAX_TYPE]; /* type of wagon */
         int     passengers;     /* passengers per wagon */
 } TRAIN;
 
